@@ -5,7 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StayHeldy Services</title>
 
-    <style>
+    <link rel="stylesheet" href="./css/services.css">
+
+    <link rel="stylesheet" href="./css/style.css">
+    <script
+    src="https://code.jquery.com/jquery-3.2.1.min.js"
+    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+
+
+    <!-- <style>
         .services_container_1{
             text-align: center;
             font-family: "Lucida Sans", sans-serif;
@@ -84,7 +93,7 @@
 
         }
      
-        .services_click_here{
+        .services_click_here :hover{
             color: black;
             text-align: center;
             background-color: rgb(203, 219, 203);
@@ -94,25 +103,77 @@
             border-radius: 25px;
 
         }
-        a:hover {
-            text-decoration: none;
-            /* color: rgb(54, 55, 48); */
-            background-color: rgb(94, 147, 94);
-            padding: 11px;
-            border-radius: 25px;
-        }
+
         a{
             text-decoration: none;
             color: black;
         }
 
-    </style>
+    </style> -->
     
 
 
 </head>
 
+
 <body>
+    <section class="navigation">
+        <div class="nav-container">
+          <div class="brand">
+            <a href="#!">
+                <img class="brand-icon" src="./images/logo.png" alt=" Logo">
+            </a>
+            <h1>StayHeldy</h1>
+          </div>
+          <nav>
+            <div class="nav-mobile">
+                <a id="nav-toggle" href="#!"><span></span></a>
+            </div>
+            <ul class="nav-list">
+              <li>
+                <a href="#!">Home</a>
+              </li>
+              <li>
+                <a href="#!">About</a>
+              </li>
+              <li>
+                <a href="#!">Services</a>               
+              </li>             
+              <li>
+                <a href="#!">Health Tips</a>
+                <ul class="nav-dropdown">
+                  <li>
+                    <a href="#!">Articles</a>
+                  </li>
+                  <li>
+                    <a href="#!">Blog</a>
+                  </li>
+                  <li>
+                    <a href="#!">Track your Health</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a class="disabled" href="#!"><button class="subscribe-btn">Subscribe</button></a>
+              </li>
+              <li>
+                <a href="#!">
+                    <img class="search-icon" src="./images/search icon 3.jpeg" alt="search icon">
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+
+
+
+<script src="./index.js"></script>
+</body>
+
+
+<body>
+
     <div class="services_container_1" >
         <!-- <div class="services_header"> -->
             <h1>Our Services</h1>
