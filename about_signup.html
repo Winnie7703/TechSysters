@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color: rgb(3, 43, 44);
+    background-size: cover;
+    background-position: center;
+}
+.sign-up-form{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,0.3);
+    background: #fff;
+    padding: 18px;
+    margin: 2% auto 0;
+    text-align: center;
+}
+.sign-up-form h1{
+    color: rgb(62, 138, 161);
+    margin-bottom: 30px;
+}
+.input-box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 95%;
+    border: 1px solid #999;
+    outline: none;
+}
+button{
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(20, 206, 206);
+    cursor: cell;
+}
+.signup-btn{
+    background-color: rgb(18, 97, 97);
+}
+.email-btn{
+    background-color: rgb(105, 175, 172);
+}
+a{
+    text-decoration: none;
+    font-size: 13px;
+}
+hr{
+    margin-top: 20px;
+    width: 80%;
+}
+.or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10%;
+}
+img{
+    width: 70px;
+    margin-top: -50px;
+}
+</style>
+</head>
+    <body>
+
+    <div class="sign-up-form">
+        <img src="user-Icon.png">
+        <h1> Sign Up Now</h1>
+        <form>
+        <input type="username" id="username" required class="input-box" placeholder="Your Username">
+        <input type="password" id="password" required class="input-box" placeholder="Your password">
+        <p><span><input type="checkbox"></span>I agree to the Term of services</p>
+        <button type="button" class="signup-btn" onclick="auth()">Sign up</button>
+        <hr>
+        <p class="or">OR</p>
+        <button type="button" class="email-btn" >Login with email</button>
+        <p>Do you have an account? <a href="about_log_in.html">Log in</a></p>
+        <hr>
+        <a href="about_terms&condition.html">Term & Conditions</a>
+
+        </form>
+    </div>
+    
+
+    
+    </body>
+</html>

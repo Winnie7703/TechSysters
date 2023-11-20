@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+<style>
+    body{
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 14, 0.806);
+    font-family: 'Montserrat', sans-serif;
+}
+.payment-form{
+    width: 700px;
+    margin: 10% auto 0 auto;
+    padding: 20px;
+    box-shadow: 0 4px 8px 0 #264394, 0 4px 8px 0 #738d9b;
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.box-1{
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0 15px 0;
+    border: none;
+    border-radius: 15px;
+    box-sizing: border-box;
+    background-color: #43568b;
+}
+.div-1{
+    display: inline-block;
+}
+.box-2{
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin: 10px 0 15px 0;
+    background-color: #43568b;
+}
+.btn{
+    width: 49%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #43568b;
+    font-size: 18px;
+    color: white;
+}
+.btn:hover{
+    background-color: rgb(1, 2, 29);
+    cursor: pointer ;
+}    
+@media screen and (max-width: 600px){
+    body{
+        padding: 20px;
+    }
+    .payment-form{
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+</style>
+</head>
+<body>
+    <div class="payment-form">
+        <form action="action">
+            <h1>Payment</h1>
+            <label for="name">Payer name</label><br>
+            <input class="box-1" type="text" name id="name" placeholder="Enter name"><br>
+            <label for="cardnum">Card Number</label><br>
+            <input class="box-1" type="number" name id="number" placeholder="1234 1234 1234 1234"><br>
+            <label for="cardex">Card expiry date</label><br>
+        <div class="div 1">
+                <input class="box-2" type="month" name id="month" placeholder="MM/YYYY"><br>
+        </div>
+        <div class="div 1">
+            <label for="cardcvc">Card CVC</label><br>
+            <input class="box-2" type="cvc" name id="CVC" placeholder="CVC"><br>
+        </div>    
+            <button class="btn" type="button">Pay Now</button>
+            <button class="btn" type="button">Cancel</button>
+        </form>
+
+    </div>
+    >
+
+    
+</body>
+</html>
