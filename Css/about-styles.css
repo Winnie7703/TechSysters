@@ -1,0 +1,140 @@
+body{
+    /* background-color: #FFFFFF; */
+    box-sizing: border-box;
+    margin: 0;
+    background: linear-gradient(0deg, white 82%, #0A2640 18%);
+
+}
+
+#about{
+    background-color: #0A2640;
+    height: 300px;
+    color: #FFFFFF;
+
+}
+
+#about > h1{
+    width: 600px;
+    margin: 10px auto;
+   
+}
+
+.subtext{
+    width: 600px;
+    margin: 10px auto;
+   
+}
+
+#imgsection{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 800px;
+    margin: 0 auto;
+    
+}
+
+#imgsection > img{
+    width: 300px;
+    height: 285px;
+    margin: 5px;
+    border-radius: 24px;
+
+}
+
+.item5 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+  }
+
+  .item2{
+    width: 500px;
+    height: 570px !important;
+    margin: 5px;
+    border-radius: 24px;
+
+    grid-row-start: 1;
+    grid-row-end: 4;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+
+  }
+
+  #Story{
+    width: 570px;
+    height: 284px;
+    
+    /* border: 2px solid red; */
+    margin: 50px auto;
+
+}
+
+#Values{
+    background-color:#0A2640 ;
+    padding-left: 250px;
+    padding-right: 250px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: #FFFFFF;
+}
+
+#Values > ul > li{
+    display: flex;
+    margin: 20px;
+    gap: 25px;
+}
+
+.footer-form{
+    background-color: #0A2640;
+    margin: 40px auto;
+    padding-top: 10px;
+    padding-bottom: 40px;
+    width: 800px;
+    /* height: 191px; */
+    color: #FFFFFF;
+
+}
+
+.email{
+    width: 350px;
+    /* height: 120px; */
+    background-color: white;
+    font-size: 16px;
+    padding: 15px 5px 15px 5px;
+    border-radius:240px ;
+    border: 1px solid white;
+    
+    
+    
+}
+
+.submit{
+    width: 120px;
+    color: #0A2640;
+    background-color: white;
+    font-size: 16px;
+    padding: 15px 5px 15px 5px;
+    border-radius:240px ;
+    border-radius:220px ;
+    background: #65E4A3;
+    border: 1px solid #65E4A3;
+    
+}
+
+button:hover{
+    background-color: #c9ecda;
+}
+
+.finalfoot{
+    display: flex;
+    gap: 50px;
+    margin-top: 100px;
+    margin-left: 190px;
+    margin-right: 50px;
+}
+
+li{
+    list-style: none;
+    padding-top: 20px;
+    pa
+}
