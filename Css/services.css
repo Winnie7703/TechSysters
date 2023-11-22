@@ -197,18 +197,25 @@ nav ul li ul li a {
 
 /* this is where I have begun the services.css script */
 
-
-.services_container_1{
+.services_container_1 {}
+body{
     text-align: center;
     font-family: "Lucida Sans", sans-serif;
-    background-color: #429f68;
-    padding: 30px;
-    height: 800px;
+    /* background-color: #429f68; */
+    /* background: #2cddda */
+    /* padding: 30px; */
+    /* height: 500px;  */
+    /* margin: 0; */
+    /* padding: 0; */
+    /* font-family: sans-serif; */
+    background-color: rgb(28, 61, 91);
+    color: #f2f2f2;
    
 }
 
 .services_container_2{
-    text-align: left;
+    /* text-align: left; */
+    /* color: #0b0b0b; */
 
     /* max-height: 960px; */
 
@@ -217,74 +224,71 @@ nav ul li ul li a {
 }
 
 
-.services_book_app{
+/* .services_book_app{
     float: left;
     width: 40%;
     background-color: #f2f2f2;
     padding: 25px;
-    /* max-width: 960px; */
     text-wrap: balance;  
     margin-top: 20px;      
     height: 250px;
     text-align: left;
 
     
-}
+} */
 
 
-.services_book_lab{
+/* .services_book_lab{
     float: right;
     width: 40%;
     background-color: #f2f2f2;
     padding: 25px;
-    /* max-width: 960px; */
     text-wrap: balance;
     height: 250px;
     margin-top: 20px;   
         
 
-}
+} */
 
 
 /* .clr {
     clear: both;
 } */
 
-.services_search_hosp{
+/* .services_search_hosp{
     float: left;
     width: 40%;
     background-color: #f2f2f2;
     padding: 25px;
-    /* max-width: 960px; */
     text-wrap: balance;  
     margin-top: 20px;      
     height: 250px;
     
-
-
-}
-.services_search_lab{
+} */
+/* .services_search_lab{
     float: right;
     width: 40%;
     background-color: #f2f2f2;
     padding: 25px;
-    /* max-width: 960px; */
     text-wrap: balance;
     height: 250px;
     margin-top: 20px; 
 
 
-}
+} */
 
 
 .services_click_here :hover{ 
-    color: black;
+    /* color: black; */
     text-align: center;
-    background-color: rgb(203, 219, 203);
+    /* background-color: rgb(203, 219, 203); */
     padding: 15px;
     /* margin: 2px; */
     width: 100px;
     border-radius: 25px;
+    background-color: rgb(50, 58, 66);
+    color: rgb(110, 140, 221);
+    cursor: default;
 
 }
 
@@ -299,3 +303,157 @@ a{
     text-decoration: none;
     color: black;
 }
+
+
+/* Services section styles */
+.services_container_1 {}
+
+.services_container_2 {
+  text-align: left;
+  color: #0b0b0b;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Services card styles */
+.services_book_app,
+.services_book_lab,
+.services_search_hosp,
+.services_search_lab {
+  flex: 0 1 calc(50% - 40px);
+  background-color: #f2f2f2;
+  padding: 25px;
+  margin-top: 20px;
+  height: 250px;
+}
+
+
+@media only screen and (max-width: 800px) {
+  /* Responsive styles for smaller screens */
+
+  /* Navigation adjustments */
+  .nav-container {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+  .nav-list {
+    display: none;
+  }
+  /* ... (adjust other navigation styles as needed) ... */
+
+  /* Services section adjustments */
+  .services_container_2 {
+    padding-top: 10px;
+  }
+  .services_book_app,
+  .services_book_lab,
+  .services_search_hosp,
+  .services_search_lab {
+    flex: 0 1 calc(100% - 40px);
+  }
+}
+
+
+/* FOOTER SECTION from Chinwe's health page */
+
+.footer{
+  background-color: #0a2640;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color: #ffffff;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color: #ffffff;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color: #8cbff2;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:920px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  
+
+
+
+/* Footer styles */
+.footer {
+  background-color: #0a2640;
+  padding: 30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align: center;
+}
+
+.footer .row {
+  width: 100%;
+  margin: 1% 0%;
+  padding: 0.6% 0%;
+  color: #ffffff;
+  font-size: 0.8em;
+}
+
+.footer .row a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: 0.5s;
+}
+
+.footer .row a:hover {
+  color: #8cbff2;
+}
+
+.footer .row ul {
+  width: 100%;
+}
+
+.footer .row ul li {
+  display: inline-block;
+  margin: 0px 30px;
+}
+
+.footer .row a i {
+  font-size: 2em;
+  margin: 0% 1%;
+}
+
