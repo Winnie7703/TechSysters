@@ -1,0 +1,369 @@
+@charset "UTF-8";
+.navigation {
+  position: relative;
+  height: 70px;
+  background: #0a2640;
+}
+
+.brand {
+  position: absolute;
+  top: 5px;
+  padding-left: 20px;
+  float: left;
+  padding-left: 20px;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.brand a .brand-icon,
+.brand a:visited .brand-icon {
+  width: 60px;
+  height: 60px;
+}
+.brand h1 {
+  position: absolute;
+  top: 0px;
+  left: 80px;
+  color: #ffffff;
+  font-family: "manrope";
+  font-weight: 600;
+  font-size: 1.4em;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #0a2640;
+  color: #ffffff;
+  text-decoration: none;
+  font-family: "open sans";
+  font-weight: 600;
+  font-size: 16px;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #8cbff2;
+  color: #ffffff;
+  transition: 0.5s ease-in;
+}
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+  padding-left: 4px;
+  content: " ▾";
+}
+nav ul li a .search-icon,
+nav ul li a:visited .search-icon {
+  position: absolute;
+  top: 10px;
+  width: 40px;
+  height: 40px;
+}
+nav ul li a .subscribe-btn,
+nav ul li a:visited .subscribe-btn {
+  color: #0a2540;
+  width: 128px;
+  height: 40px;
+  border: 2px;
+  border-radius: 24px;
+  font-family: "open sans";
+  font-weight: 700;
+  font-size: 16px;
+}
+nav ul li a .subscribe-btn:hover,
+nav ul li a:visited .subscribe-btn:hover {
+  background-color: #8cbff2;
+}
+nav ul li .disabled:hover {
+  background-color: transparent;
+}
+nav ul li ul li {
+  min-width: 190px;
+}
+nav ul li ul li a {
+  padding: 15px;
+  line-height: 20px;
+}
+
+.nav-dropdown {
+  position: absolute;
+  display: none;
+  z-index: 1;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Mobile navigation */
+.nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background: #0a2640;
+  height: 70px;
+  width: 70px;
+}
+
+@media only screen and (max-width: 800px) {
+  .nav-mobile {
+    display: block;
+  }
+  nav {
+    width: 100%;
+    padding: 70px 0 15px;
+  }
+  nav ul {
+    display: none;
+  }
+  nav ul li {
+    float: none;
+  }
+  nav ul li a {
+    padding: 15px;
+    line-height: 20px;
+  }
+  nav ul li ul li a {
+    padding-left: 30px;
+  }
+  .nav-dropdown {
+    position: static;
+  }
+}
+@media screen and (min-width: 800px) {
+  .nav-list {
+    display: block !important;
+  }
+}
+#nav-toggle {
+  position: absolute;
+  left: 18px;
+  top: 22px;
+  cursor: pointer;
+  padding: 10px 35px 16px 0px;
+}
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+  cursor: pointer;
+  border-radius: 1px;
+  height: 5px;
+  width: 35px;
+  background: #ffffff;
+  position: absolute;
+  display: block;
+  content: "";
+  transition: all 300ms ease-in-out;
+}
+#nav-toggle span:before {
+  top: -10px;
+}
+#nav-toggle span:after {
+  bottom: -10px;
+}
+#nav-toggle.active span {
+  background-color: transparent;
+}
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+  top: 0;
+}
+#nav-toggle.active span:before {
+  transform: rotate(45deg);
+}
+#nav-toggle.active span:after {
+  transform: rotate(-45deg);
+}
+
+/*# sourceMappingURL=style.css.map */
+
+/* this is where I have begun the services.css script */
+
+.services_container_1 {}
+body{
+    text-align: center;
+    font-family: "Lucida Sans", sans-serif;
+    /* background-color: #429f68; */
+    /* background: #2cddda */
+    padding: 30px;
+    height: 800px; 
+    margin: 0;
+    padding: 0;
+    /* font-family: sans-serif; */
+    background-color: rgb(28, 61, 91);
+    color: #f2f2f2;
+   
+}
+
+.services_container_2{
+    text-align: left;
+    color: #0b0b0b;
+
+    /* max-height: 960px; */
+
+   
+    
+}
+
+
+.services_book_app{
+    float: left;
+    width: 40%;
+    background-color: #f2f2f2;
+    padding: 25px;
+    /* max-width: 960px; */
+    text-wrap: balance;  
+    margin-top: 20px;      
+    height: 250px;
+    text-align: left;
+
+    
+}
+
+
+.services_book_lab{
+    float: right;
+    width: 40%;
+    background-color: #f2f2f2;
+    padding: 25px;
+    /* max-width: 960px; */
+    text-wrap: balance;
+    height: 250px;
+    margin-top: 20px;   
+        
+
+}
+
+
+/* .clr {
+    clear: both;
+} */
+
+.services_search_hosp{
+    float: left;
+    width: 40%;
+    background-color: #f2f2f2;
+    padding: 25px;
+    /* max-width: 960px; */
+    text-wrap: balance;  
+    margin-top: 20px;      
+    height: 250px;
+    
+
+
+}
+.services_search_lab{
+    float: right;
+    width: 40%;
+    background-color: #f2f2f2;
+    padding: 25px;
+    /* max-width: 960px; */
+    text-wrap: balance;
+    height: 250px;
+    margin-top: 20px; 
+
+
+}
+
+
+.services_click_here :hover{ 
+    /* color: black; */
+    text-align: center;
+    /* background-color: rgb(203, 219, 203); */
+    padding: 15px;
+    /* margin: 2px; */
+    width: 100px;
+    border-radius: 25px;
+    background-color: rgb(50, 58, 66);
+    color: rgb(110, 140, 221);
+    cursor: default;
+
+}
+
+
+/* a:hover {
+    text-decoration: none;
+    background-color: rgb(94, 147, 94);
+    padding: 11px;
+    border-radius: 25px;
+} */
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* FOOTER SECTION from Chinwe's health page */
+
+.footer{
+  background-color: #0a2640;
+  padding:30px 0px;
+  font-family: 'Play', sans-serif;
+  text-align:center;
+  }
+  
+  .footer .row{
+  width:100%;
+  margin:1% 0%;
+  padding:0.6% 0%;
+  color: #ffffff;
+  font-size:0.8em;
+  }
+  
+  .footer .row a{
+  text-decoration:none;
+  color: #ffffff;
+  transition:0.5s;
+  }
+  
+  .footer .row a:hover{
+  color: #8cbff2;
+  }
+  
+  .footer .row ul{
+  width:100%;
+  }
+  
+  .footer .row ul li{
+  display:inline-block;
+  margin:0px 30px;
+  }
+  
+  .footer .row a i{
+  font-size:2em;
+  margin:0% 1%;
+  }
+  
+  @media (max-width:920px){
+  .footer{
+  text-align:left;
+  padding:5%;
+  }
+  .footer .row ul li{
+  display:block;
+  margin:10px 0px;
+  text-align:left;
+  }
+  .footer .row a i{
+  margin:0% 3%;
+  }
+  }
+  
